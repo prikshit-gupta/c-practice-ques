@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+        int arr[3][10];
+        int num1, num2, num3;
+	scanf("%d %d %d", &num1, &num2, &num3);
+
+	int mul[] = {num1, num2, num3};
+
+        for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 10; j++) {
+                        arr[i][j] = mul[i] * (j+1);
+                        printf("The value of %d × %d = %d\n", mul[i], j+1, arr[i][j]);
+                }
+                printf("\n");
+        }
+
+        return 0;
+}
+
